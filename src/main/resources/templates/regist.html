@@ -1,10 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>无标题文档</title>
-<link href="css/common.css" rel="stylesheet" type="text/css" />
-<link href="css/style.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8">
+<title>注册页</title>
+  <link th:href="@{/static/css/common.css}" rel="stylesheet" type="text/css"/>
+  <link th:href="@{/static/css/style.css}" rel="stylesheet" type="text/css"/>
 </head>
 
 <body>
@@ -44,7 +44,7 @@
             <dd class="hegas">
               <label> <small>*</small>验证码</label>
               <input type="text" class="inputh inputs lf" value="" />
-               <span class="wordp lf"><img src="images/img2.jpg" width="96" height="27" alt="" /></span>
+               <span class="wordp lf"><img th:src="@{/static/images/img2.jpg}" width="96" height="27" alt="" /></span>
                <span class="blues lf"><a href="" title="">看不清</a></span>
             </dd>
             <dd class="hegas">

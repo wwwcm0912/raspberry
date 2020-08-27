@@ -3,6 +3,9 @@ spring:
     url: jdbc:mysql://rm-2ze5s5d7d5bxbyza32o.mysql.rds.aliyuncs.com:3306/auction
     username: res_sh
     password: Vh5rq2r6
+  security:
+    user:
+      name: user1
+      password: 123456
   mvc:
-    view:
-      prefix:
+    static-path-pattern: /static/**
